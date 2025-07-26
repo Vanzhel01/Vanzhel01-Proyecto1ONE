@@ -3,13 +3,12 @@ let numeroMaximo=100;
 let numeroSecreto=Math.floor(Math.random()*numeroMaximo)+1;
 let numeroUsuario=parseInt(prompt(`Ingrese un numero entre 1 y ${numeroMaximo}` ));
 let counter=1;
-//let palabraIntento='intento';
 let numeroIntentos=10;
 
-//console.log(typeof(numeroUsuario));
+
 console.log(numeroSecreto);
 
-//si erramos
+//si erramos el numero
 while(numeroSecreto!=numeroUsuario){
     if(counter==numeroIntentos){
         alert(`Llegaste al limite de ${numeroIntentos} intentos`);
@@ -22,7 +21,7 @@ while(numeroSecreto!=numeroUsuario){
         numeroUsuario=prompt(`Ingresaste ${numeroUsuario}, el numero secreto es menor, ingrese otro numero. Te quedan ${numeroIntentos-counter}`);
     }
     counter++;
-    //palabraIntento="intentos";
+    
 }
 //si es correcto
 if(numeroSecreto==numeroUsuario){
@@ -31,7 +30,7 @@ if(numeroSecreto==numeroUsuario){
 
 
 
-
+//ejercicios ------
 /*console.log(Math.random());
 
 console.log(parseInt(Math.random()*10)+1);
